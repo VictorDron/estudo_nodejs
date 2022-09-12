@@ -1,4 +1,5 @@
-function mult (x,y) {
+var mult = function  (x,y) {
+    return x*y;
 
     
 }

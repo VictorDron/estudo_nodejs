@@ -1,3 +1,4 @@
-function soma (x,y) {
+ var soma = function  (x,y) {
+    return x+y;
 
 }

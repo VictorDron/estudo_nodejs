@@ -1,3 +1,4 @@
-function div (x,y) {
+var div = function  (x,y) {
+   return x/y;
 
 }
