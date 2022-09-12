@@ -3,3 +3,4 @@
     return x-y;
 
 }
+module.exports = sub;
