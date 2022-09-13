@@ -14,12 +14,13 @@ app.get("/blog",function(req,res){
     res.send("Bem vindo ao meu blog");
 
 })
-
-app.get("/ola", function(req,res){
-    res.send("Olá");
+//Rotas dinamicas
+app.get("/ola/:nome/:cargo", function(req,res){
+    res.send(req.params.cargo);
 })
 
 
 app.listen(8081, function(){
     console.log("Servidor rodando");
 });
+
