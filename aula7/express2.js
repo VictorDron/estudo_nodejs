@@ -15,6 +15,11 @@ app.get("/blog",function(req,res){
 
 })
 
+app.get("/ola", function(req,res){
+    res.send("Olá");
+})
+
+
 app.listen(8081, function(){
     console.log("Servidor rodando");
 });
