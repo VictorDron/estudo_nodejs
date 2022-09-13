@@ -2,7 +2,7 @@ const express = require ("express");
 const app = express();
 
 app.get("/", function(){
-    res.sendFile(__dirname + "aula9/index.html");
+    res.sendFile(__dirname + "/Github/estudo_nodejs/aula9/index.html");
 });
 
 
