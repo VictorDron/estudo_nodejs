@@ -17,3 +17,24 @@ INSERT INTO usuarios(nome,email,idade) VALUES(
     'Vic@teste',
      22
 );
+
+INSERT INTO usuarios(nome,email,idade) VALUES(
+    'VictordRON',
+    'Vic@teste2',
+     22
+);
+
+INSERT INTO usuarios(nome,email,idade) VALUES(
+    'VictordRON1',
+    'Vic@teste21',
+     22
+);
+
+
+INSERT INTO usuarios(nome,email,idade) VALUES(
+    'VictordRON6',
+    'Vic@teste28',
+     22
+);
+
+SELECT * FROM usuarios WHERE nome='Victor';
