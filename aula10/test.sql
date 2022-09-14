@@ -3,3 +3,10 @@ CREATE TABLE usuarios(
     email VARCHAR(100),
     idade INT 
 );
+
+CREATE TABLE price (
+    abertura FLOAT(10),
+    fechamento FLOAT(10),
+    maximo FLOAT(10),
+    minimo FLOAT(10)
+);
