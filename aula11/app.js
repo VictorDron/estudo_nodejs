@@ -7,7 +7,7 @@ const sequilize = new Sequelize ('victor','root','153120',{
     dialect: "mysql"
 })
 
-sequilize.authenticate().than(function(){
+sequilize.authenticate().then(function(){
     console.log('Conectado');
 }).catch(function(erro){
     console.log('Falha ao se conectar' + erro);
