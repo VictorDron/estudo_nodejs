@@ -2,7 +2,7 @@ const express = require("express");
 const app = express;
 const Sequelize = require('sequelize');
 
-const sequilize = new Sequelize ('victor','root','153120',{
+const sequelize = new Sequelize ('victor','root','153120',{
     host: "localhost",
     dialect: "mysql"
 })
