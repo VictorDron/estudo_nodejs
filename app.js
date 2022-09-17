@@ -28,11 +28,14 @@ app.get('/form',function(req,res){
     res.render('formulario');
 
 });
-
+//Rota para recebimento dos dados do front
 app.post('/add', function(req,res){
 
     let nome = req.body.titulo; // Localizando e armazenando na variavel o que virá do campo nome
-    res.send('Cadastrado com sucesso' + nome);
+    let cont = req.body.conteudo;
+    //Callback
+    res.send('Cadastrado com sucesso' + nome + cont);
+    
 
 
 })
