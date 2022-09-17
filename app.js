@@ -7,11 +7,13 @@ const sequelize = new Sequelize (/*nome do banco*/'victor',/*Tipo de acesso*/'ro
     host: 'localhost',
     dialect: 'mysql'
 });
-
+// Chamada para conectar o body/Parse que recebe os dados do formulário
+const bodyParser = require('body-parser');
 // Chamada ao handlebars, que é responsável por conectar o front ao back
 const handlebars = require('express-handlebars');
 //Configuração do HandleBars
 app.engine('handlebars', handlebars.engine({defaultLayout:'main'}));
+app.set('view','handlebars');
 
 
 //Criação de rota com o método GET
