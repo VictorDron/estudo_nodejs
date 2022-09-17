@@ -2,12 +2,7 @@
 const express = require ("express");
 const app = express();
 
-//Chamada ao Sequelize para conectar o banco de dados mysql
-const Sequelize = require ('sequelize');
-const sequelize = new Sequelize (/*nome do banco*/'victor',/*Tipo de acesso*/'root',/*Senha*/'153120',{
-    host: 'localhost',
-    dialect: 'mysql'
-});
+
 // Chamada para conectar o body/Parse que recebe os dados do formulário
 const bodyParser = require('body-parser');
 
