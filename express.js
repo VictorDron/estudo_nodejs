@@ -11,7 +11,7 @@ const sequelize = new Sequelize (/*nome do banco*/'victor',/*Tipo de acesso*/'ro
 // Chamada ao handlebars, que é responsável por conectar o front ao back
 const handlebars = require('express-handlebars');
 //Configuração do HandleBars
-app.engine('handlebars,' handlebars.engine({defaultLayout}));
+app.engine('handlebars', handlebars.engine({defaultLayout:'main'}));
 
 
 //Criação de rota com o método GET
