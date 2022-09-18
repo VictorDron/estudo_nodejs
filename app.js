@@ -55,13 +55,13 @@ app.set('view engine','handlebars');
         
         //Traz os dados do db
          Post.findAll().then(function(posts){
-            console.log(posts);
-            res.render('home', {posts: posts})    
+            //Exibo os elemntos no front
+            res.render('home', {posts: posts})   
+            console.log(posts); 
         })
-    
-        
     })
 
+    
 app.listen(8081, function(){
     console.log('Servido ON');
 }); 
