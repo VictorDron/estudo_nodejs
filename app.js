@@ -52,12 +52,13 @@ app.set('view engine','handlebars');
     
     
     app.get('/', function(req,res){
-
+        
         //Traz os dados do db
-        Post.findAll().then(function(posts){
-            res.render('home', {posts: posts})
+         Post.findAll().then(function(posts){
+            console.log(posts);
+            res.render('home', {posts: posts})    
         })
-
+    
         
     })
 
