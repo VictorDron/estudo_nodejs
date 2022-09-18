@@ -41,7 +41,7 @@ app.set('view engine','handlebars');
             titulo: nome,
             conteudo: cont
 
-        })./*tESTE SE O REGISTRO DEU CERTO*/then(function(){
+        })./*TESTE SE O REGISTRO DEU CERTO*/then(function(){
             res.redirect('/')
 
         }).catch(function(){
@@ -52,6 +52,9 @@ app.set('view engine','handlebars');
 
     app.get('/', function(req,res){
         res.render('home');
+
+
+        
     })
 
 app.listen(8081, function(){
