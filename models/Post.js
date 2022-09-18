@@ -1,5 +1,6 @@
 const db = require ('./db');
 
+//Setando a criação da table
 const Post = db.sequelize.define ('postagens',{
 
     titulo: {
