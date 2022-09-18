@@ -49,10 +49,14 @@ app.set('view engine','handlebars');
         })
         
     })
-
+    
+    
     app.get('/', function(req,res){
-        res.render('home');
 
+        //Traz os dados do db
+        Post.findAll().then(function(posts){
+            res.render('home', {posts: posts})
+        })
 
         
     })

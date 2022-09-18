@@ -2,7 +2,8 @@
 const Sequelize = require ('sequelize');
 const sequelize = new Sequelize (/*nome do banco*/'postapp',/*Tipo de acesso*/'root',/*Senha*/'153120',{
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    query:{raw:true}
 });
 
 //Exportação para ser usado no pagina principal
