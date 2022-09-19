@@ -60,6 +60,18 @@ app.set('view engine','handlebars');
             console.log(posts); 
         })
     })
+    
+    //Para deletar um elemento do db pelo id
+    app.get('/del/:id', function(req,res){
+        Post.destry({where:{'id': req.params.id}}).then(function(){
+            res.send('Deletado com sucesso');
+        }).catch(function(){
+            res.send('Esse  postra não existe');
+        });
+    });
+
+
+
 
     
 app.listen(8081, function(){
